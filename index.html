@@ -1,295 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>errror</title>
+</head>
+<body>
+  <h1>403</h1>
+<div><p>> <span>ERROR CODE</span>: "<i>HTTP 403 Forbidden</i>"</p>
+<p>> <span>ERROR DESCRIPTION</span>: "<i>Access Denied. You Do Not Have The Permission To Access This Page</i>"</p>
+<p>> <span>ERROR POSSIBLY CAUSED BY</span>: [<b>execute access forbidden, read access forbidden, write access forbidden, ssl required, ssl 128 required, ip address rejected, client certificate required, site access denied, too many users, invalid configuration, password change, mapper denied access, client certificate revoked, directory listing denied, client access licenses exceeded, client certificate is untrusted or invalid, client certificate has expired or is not yet valid, passport logon failed, source access denied, infinite depth is denied, too many requests from the same client ip</b>...]</p>
+<p>> <span>SOME PAGES ON THIS SERVER THAT YOU DO HAVE PERMISSION TO ACCESS</span>: [<a href="https://secretguard.xyz/">Home Page</a>, <a href="https://secretguard.xyz/">About Us</a>, <a href="https://secretguard.xyz/">Contact Us</a>, <a href="https://blog.secretguard.xyz/">Blog</a>...]</p
+  @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+  <style
+  @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
 
-  </div>
-  <div id="error-box">
-    <div class="dot"></div>
-    <div class="dot two"></div>
-    <div class="face2">
-      <div class="eye"></div>
-      <div class="eye right"></div>
-      <div class="mouth sad"></div>
-    </div>
-    <div class="shadow move"></div>
-    <div class="message"><h1 class="alert">Error!</h1><p>oh no, something went wrong. 
-      looks like you got no permission to enter this site</div>
-    <button class="button-box"><a href="https://secretguard.xyz"<a/><h1 class="red">try again</h1>
-    </button>
-  </div>
-</div>
-<style>
-  $white: #FCFCFC;
-$gray: #CBCDD3;
-$dark: #777777;
-$error: #EF8D9C;
-$orange: #FFC39E;
-$success: #B0DB7D;
-$secondary: #99DBB4;
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
-$font: 'Lato', sans-serif;
-
-html {
-  display: grid;
-  min-height: 100%;
-}
-
-body {
-  display: grid;
-  overflow: hidden;
-  font-family: $font;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#container {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 700px;
-  height: 250px;
-}
-
-h1 {
-  font-size: 0.9em;
-  font-weight: 100;
-  letter-spacing: 3px;
-  padding-top: 5px;
-  color: $white;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.green {
-  color: darken($secondary, 20%);
-}
-
-.red {
-  color: darken($error, 10%);
-}
-
-.alert {
-  font-weight: 700;
-  letter-spacing: 5px;
-}
-
-p {
-  margin-top: -5px;
-  font-size: 0.5em;
-  font-weight: 100;
-  color: darken($dark, 10%);
-  letter-spacing: 1px;
-}
-
-button, .dot {
-  cursor: pointer;
-}
-
-#success-box {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  left: 12%;
-  background: linear-gradient(to bottom right, $success 40%, $secondary 100%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px rgba($gray, 10%);
-  perspective: 40px;
-}
-
-#error-box {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  right: 12%;
-  background: linear-gradient(to bottom left, $error 40%, $orange 100%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px rgba($gray, 10%);
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background: $white;
-  border-radius: 50%;
-  position: absolute;
-  top: 4%;
-  right: 6%;
-  &:hover {
-    background: darken($white, 20%);
+  * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      color: inherit;
   }
-}
-
-.two {
-  right: 12%;
-  opacity: .5;
-}
-
-.face {
-  position: absolute;
-  width: 22%;
-  height: 22%;
-  background: $white;
-  border-radius: 50%;
-  border: 1px solid $dark;
-  top: 21%;
-  left: 37.5%;
-  z-index: 2;
-  animation: bounce 1s ease-in infinite;
-}
-
-.face2 {
-  position: absolute;
-  width: 22%;
-  height: 22%;
-  background: $white;
-  border-radius: 50%;
-  border: 1px solid $dark;
-  top: 21%;
-  left: 37.5%;
-  z-index: 2;
-  animation: roll 3s ease-in-out infinite;
-}
-
-.eye {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: $dark;
-  border-radius: 50%;
-  top: 40%;
-  left: 20%;
-}
-
-.right {
-  left: 68%;
-}
-
-.mouth {
-  position:absolute;
-  top: 43%;
-  left: 41%;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-}
-
-.happy {
-  border: 2px solid;
-  border-color: transparent $dark $dark transparent;
-  transform: rotate(45deg);
-}
-
-.sad {
-  top: 49%;
-  border: 2px solid;
-  border-color: $dark transparent transparent $dark;
-  transform: rotate(45deg);
-}
-
-.shadow {
-  position: absolute;
-  width: 21%;
-  height: 3%;
-  opacity: .5;
-  background: $dark;
-  left: 40%;
-  top: 43%;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.scale {
-  animation: scale 1s ease-in infinite;
-}
-.move {
-  animation: move 3s ease-in-out infinite;
-}
-
-
-.message {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  height: 40%;
-  top: 47%;
-}
-
-.button-box {
-  position: absolute;
-  background: $white;
-  width: 50%;
-  height: 15%;
-  border-radius: 20px;
-  top: 73%;
-  left: 25%;
-  outline: 0;
-  border: none;
-  box-shadow: 2px 2px 10px rgba($dark, .5);
-  transition: all .5s ease-in-out;
-  &:hover {
-    background: darken($white, 5%);
-    transform: scale(1.05);
-    transition: all .3s ease-in-out;
+  
+  body {
+      background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
+      height: 100vh;
   }
-}
-
-@keyframes bounce {
-  50% {
-     transform: translateY(-10px);
+  
+  h1 {
+      font-size: 45vw;
+      text-align: center;
+      position: fixed;
+      width: 100vw;
+      z-index: 1;
+      color: #ffffff26;
+      text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: "Montserrat", monospace;
   }
-}
-
-@keyframes scale {
-  50% {
-    transform: scale(0.9);
+  
+  div {
+      background: rgba(0, 0, 0, 0);
+      width: 70vw;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 auto;
+      padding: 30px 30px 10px;
+      box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+      z-index: 3;
   }
-}
-
-@keyframes roll {
-  0% {
-    transform: rotate(0deg);
-    left: 25%;
+  
+  P {
+      font-family: "Share Tech Mono", monospace;
+      color: #f5f5f5;
+      margin: 0 0 20px;
+      font-size: 17px;
+      line-height: 1.2;
   }
-  50% {
-    left: 60%;
-    transform: rotate(168deg);
+  
+  span {
+      color: #f0c674;
   }
-  100% {
-    transform: rotate(0deg);
-    left: 25%;
+  
+  i {
+      color: #8abeb7;
   }
-}
-
-@keyframes move {
-  0% {
-    left: 25%;
+  
+  div a {
+      text-decoration: none;
   }
-  50% {
-    left: 60%;
+  
+  b {
+      color: #81a2be;
   }
-  100% {
-    left: 25%;
+  
+  a.avatar {
+      position: fixed;
+      bottom: 15px;
+      right: -100px;
+      animation: slide 0.5s 4.5s forwards;
+      display: block;
+      z-index: 4
   }
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  font-size: 1em;
-  text-transform: uppercase;
-  padding: 10px;
-  font-family: $font;
-  p {
-    color: $error;
-    letter-spacing: 2px;
+  
+  a.avatar img {
+      border-radius: 100%;
+      width: 44px;
+      border: 2px solid white;
   }
-  a {
-    color: $success;
-    text-decoration: none;
-    &:hover {
-      color: $orange;
-    }
+  
+  @keyframes slide {
+      from {
+          right: -100px;
+          transform: rotate(360deg);
+          opacity: 0;
+      }
+      to {
+          right: 15px;
+          transform: rotate(0deg);
+          opacity: 1;
+      }
   }
-}
-  <style/>
+  </style>
+  <script>var str = document.getElementsByTagName('div')[0].innerHTML.toString();
+    var i = 0;
+    document.getElementsByTagName('div')[0].innerHTML = "";
+    
+    setTimeout(function() {
+        var se = setInterval(function() {
+            i++;
+            document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
+            if (i == str.length) {
+                clearInterval(se);
+                document.getElementsByTagName('div')[0].innerHTML = str;
+            }
+        }, 10);
+    },0);
+    </script>
+</body>
+</html>
